@@ -30,9 +30,22 @@ edades = {
 > Estos datos son necesarios para la realización del examen
 
 ### Explicación de los datos
-- Se nos ha otorgado primero una función que se llama **`buscarPalabra`**, la cual se va a autilizar para buscar una palabra dentro de una lista llamada _`nombres`_, que se muestra también en el programa. 
+- Se nos ha otorgado primero una función que se llama **`buscarPalabra`**, la cual se va a a utilizar para buscar una palabra dentro de una lista llamada _`nombres`_, que se muestra también en el programa. 
 
-- Después también hay una función llamada **`imprimirListaInversa`**, la cual se va a utilizar para imprimir
+- Después también hay una función llamada **`imprimirListaInversa`**, la cual se va a utilizar para imprimir la lista en la parte superior del programa, cada vez que se inice el programa
+
+- Por último se nos otorgan una lista y un diccionario llamados:
+    - **`nombres`**: Que es la lista la cual guarda los nombres
+    - **`edades`**: Diccionario que guarda los nombre como la _clave_ y las edades como el _valor_, se vería así en una tabla:
+
+|         | Mengano | Fulano | Zutano | Perantano |
+|---------|---------|--------|--------|-----------|
+| Edades  |  0 años | 25 años| 50 años|  75 años  |
+
+<div id="Primera"></div>
 
 ## Primera función
-Para la primera función se nos pide 
+La primera función, `buscarPalabra`, se le pasan 2 parámetros:
+- *objetivo*, que es la palabra que se va a tener que buscar    
+- *palabras*, que es el array/lista de palabras donde se va a tener que buscar el objetivo.
+
