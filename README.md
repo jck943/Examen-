@@ -6,7 +6,7 @@ Esto es mi examen de 2ª EV
 1. [Datos que se han dado](#Datos)
 2. [Primera función](#Primera)
 3. [Segunda función](#Segunda)
-4. ["Función principal (Main)"](#Main)
+4. [Función principal (Main)](#Main)
 
 <br><br>
 <div id="Datos"></div>
@@ -60,7 +60,7 @@ def buscarPalabra(objetivo, palabras):
 ```
 
 <br><br>
-<div id="Primera"></div>
+<div id="Segunda"></div>
 
 ## Segunda función
 Para la segunda función, `imprimirListaInversa`, se le pasará un parámetro:
@@ -81,3 +81,33 @@ def imprimirListaInversa(lista):
 2. Después se hace un bucle _for_, el cual empieza desde `len(lista) - 1` que es la longitud de la lista menos 1, termina en la posición de la lista `-1` y tiene un *step* (paso) de `-1`, cosa que hace que el bucle for se recorra hacia atrás.
 3. Dentro del bucle `for` se asigna a la `nueva_lista` el valor de cada uno de los valores de la lista inicial.
 4. Se imprime el resultado con el formato especificado
+
+<br><br>
+<div id="Main"></div>
+
+## Función principal (Main)
+Esta es la función en la cual se llama a todas las funciones, se tiene el bucle que hace que no termine de preguntar: `"Buscar nombre: "` y se tienen las listas almacenadas. El código es el siguiente: 
+```py
+nombres = ["Mengano", "Fulano", "Zutano", "Perantano"]
+edades = {
+    "Mengano": 0,
+    "Fulano": 25,
+    "Zutano": 50,
+    "Perantano": 75
+}
+imprimirListaInversa(nombres)
+while True:
+    print()
+    objetivo = input("Buscar nombre: ")
+    if objetivo == "exit":
+        print("\nFIN DEL PROGRAMA")
+        break
+    elif buscarPalabra(objetivo, nombres) == True:
+        print(objetivo + " tiene " + str(edades[objetivo]) + " años")
+    else:
+        print("El nombre no existe...")
+```
+### Explicación
+- *`nombres y edades`*, son la lista y el diccionario.
+- *`imprimirListaInversa(nombres)`*: es la lista que tiene que aparecer al principio
+- *`while True`*: el bucle
